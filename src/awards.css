@@ -1,0 +1,36 @@
+
+.awards-logo-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.awards-logo-section .swiper-container {
+    margin-top: 30px;
+}
+
+.awards-logo-section .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.awards-logo-section .awards-logo-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.awards-logo-section .swiper-container img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.awards-logo-section .swiper-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Make images responsive */
+.awards-logo-section .img-fluid {
+    max-width: 100%;
+    height: auto;
+}

@@ -6,27 +6,28 @@ import award2 from '../../images/award2.png';
 import award3 from '../../images/award3.png';
 import award4 from '../../images/award4.png';
 import award5 from '../../images/award5.png';
+import award6 from '../../images/award6.png';
 import 'swiper/css'; // Correct import for Swiper CSS in v8 and above
 
 
 
 const AwardsLogo = () => {
   return (
-    <section className="awards-logo-section py-5">
+    <section className="awards-logo-section py-3">
       <div className="container">
         {/* Heading */}
-        <div className="row text-center mb-4">
+        {/* <div className="row text-center mb-4">
           <div className="col-12">
             <h2 className='choose-service-heading font-weight-bold py-3'>Award-Winning Video Production Company in USA</h2>
           </div>
-        </div>
+        </div> */}
 
         {/* Swiper for Logos */}
         <div className="row align-items-center">
           <div className="col-12">
             <Swiper
               spaceBetween={50}
-              slidesPerView={1}
+              slidesPerView={2}
               breakpoints={{
                 640: {
                   slidesPerView: 1,
@@ -35,7 +36,7 @@ const AwardsLogo = () => {
                   slidesPerView: 3,
                 },
                 1024: {
-                  slidesPerView: 4,
+                  slidesPerView: 5,
                 },
               }}
               loop={true}
@@ -46,9 +47,9 @@ const AwardsLogo = () => {
             >
               {/* Logo Slides */}
               <SwiperSlide>
-                <a target="_blank" href="https://www.designrush.com/agency/website-design-development/new-jersey">
+                {/* <a target="_blank" href="https://www.designrush.com/agency/website-design-development/new-jersey"> */}
                 <img src={award1} alt="Award 1" className="awards-logo-image img-fluid" />
-                </a>
+                {/* </a> */}
               </SwiperSlide>
               <SwiperSlide>
                 <img src={award2} alt="Award 2" className="awards-logo-image img-fluid" />
@@ -61,6 +62,9 @@ const AwardsLogo = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <img src={award5} alt="Award 5" className="awards-logo-image img-fluid" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={award6} alt="Award 5" className="awards-logo-image img-fluid" />
               </SwiperSlide>
             </Swiper>
           </div>

@@ -1,0 +1,53 @@
+.tab-home-section {
+    padding: 40px 0;
+  }
+  
+  .tab-home-section .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+
+  .tab-home-section h2{
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  h2.tabsectionheading {
+    font-size: 36px;
+    font-weight: 800;
+}
+  
+  .tab-home-section .tab-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f8f9fa;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-home-section .tab-button.active {
+    background-color: #5BBCEA;
+    color: #fff;
+  }
+  
+  .tab-home-section .tab-button:hover {
+    background-color: #5BBCEA;
+    color: #fff;
+  }
+  
+  .tab-content-section {
+    margin-top: 20px;
+  }
+  
+  .tab-content-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  

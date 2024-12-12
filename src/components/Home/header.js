@@ -1,12 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../Header.css'; // Import the CSS file
-import logo from "../../images/logo.png"
+import logo from "../../images/logo.png";
 import { AiOutlineArrowRight } from 'react-icons/ai'; // Import right arrow icon
 
-
 const Header = () => {
+  // State to track if the header should be sticky
+  const [isSticky, setIsSticky] = useState(false);
+
+  // Hook to handle the scroll event and update the sticky state
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsSticky(true);  // Add sticky class if scrolled
+      } else {
+        setIsSticky(false); // Remove sticky class if at the top
+      }
+    };
+
+    // Add the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="main-header">
+    <header className={`main-header ${isSticky ? 'sticky' : ''}`}>
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <div className="row w-100 align-items-center">
@@ -55,10 +76,10 @@ const Header = () => {
 
                 {/* Get Started Button */}
                 <a href="#" className="get-started-btn">
-      Get Started
-      {/* Apply custom CSS class to rotate the arrow */}
-      <AiOutlineArrowRight className="arrow-icon" />
-    </a>
+                  Get Started
+                  {/* Apply custom CSS class to rotate the arrow */}
+                  <AiOutlineArrowRight className="arrow-icon" />
+                </a>
               </div>
             </div>
           </div>

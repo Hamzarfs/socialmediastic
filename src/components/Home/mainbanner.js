@@ -27,19 +27,19 @@ const MainBanner = () => {
             <p className="banner-text">
               Find someone by username or email on Social Networks, Dating Sites, Forums, Social Media.
             </p>
+            
             <div className="button-group">
-            <a href="#" className="get-started-btn">
-      Get Started
-      {/* Apply custom CSS class to rotate the arrow */}
-      <AiOutlineArrowRight className="arrow-icon" />
-    </a>
-    <a href="#" className="get-started-transparent-btn">
-      Get Started
-      {/* Apply custom CSS class to rotate the arrow */}
-      <AiOutlineArrowRight className="arrow-icon" />
-    </a>
-              
-            </div>
+  <button className="get-started-btn">
+    Free Consultation
+    <AiOutlineArrowRight className="arrow-icon" />
+  </button>
+
+  <button className="get-started-transparent-btn">
+    View Pricing
+    <AiOutlineArrowRight className="arrow-icon" />
+  </button>
+</div>
+            
           </div>
 
           {/* Right Column */}

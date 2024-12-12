@@ -1,0 +1,132 @@
+/* Main Section */
+.pricing-section-home {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* Pricing Cards */
+  .pricing-card {
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .pricing-card .card {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .pricing-card.popular .card {
+    background: linear-gradient(to right, #5BBCEA, #94DAFC);
+    color: white;
+}
+
+  /* Popular Tag */
+  .popular-tag {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+  }
+  
+  /* Header */
+  .card-header h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-header p {
+    font-size: 14px;
+  }
+  
+  /* Price Section */
+  .card-price h1 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .card-price p {
+    margin: 5px 0;
+    font-size: 14px;
+
+  }
+  
+  /* Dividers */
+  .divider {
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+  }
+  
+  /* Feature List */
+  .features-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .features-list li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .icon-check {
+    color: #28a745;
+    margin-right: 10px;
+  }
+  
+  .icon-cross {
+    color: red;
+    margin-right: 10px;
+  }
+  
+  .coming-soon {
+    font-size: 12px;
+    background: #e7f9e7;
+    color: #28a745;
+    margin-left: 10px;
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
+  
+  /* Buttons */
+  .trial-btn {
+    background: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .trial-btn:hover {
+    background: #333;
+  }
+  
+  .popular-btn {
+    background: white;
+    color: #007bff;
+  }
+  
+  .popular-btn:hover {
+    background: #f9f9f9;
+    color: #0056b3;
+  }
+  
+  /* Notes */
+  .note {
+    font-size: 12px;
+    color: #777;
+  }
+  

@@ -8,8 +8,9 @@
   }
   
   .main-header.sticky {
-    background: white;
+    background: white !important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
   }
   
   .logo {
@@ -44,16 +45,27 @@
     color: #5BBCEA;
   }
   
+  .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  /* Main Button Styling */
   .get-started-btn {
-    margin: 10px auto;
+    text-decoration: none;
     background-color: #5BBCEA;
     color: white;
     border-radius: 20px;
     padding: 10px 20px;
     font-size: 14px;
     font-weight: 500;
-    text-align: center;
-    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
   }
   
   .get-started-btn .arrow-icon {
@@ -64,55 +76,74 @@
     height: 20px;
     transform: rotate(312deg);
     transition: transform 0.3s ease;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
     font-size: 14px;
   }
-
-  .get-started-btn:hover .arrow-icon {
-    transform: rotate(0deg); /* Optional: Reset on hover */
+  
+  .get-started-btn:hover {
+    background-color: #48a7d6;
   }
-
+  
+  .get-started-btn:hover .arrow-icon {
+    transform: rotate(0deg);
+  }
+  
+  /* Transparent Button Styling */
   .get-started-transparent-btn {
-    border-color: #5BBCEA;
-    margin: 10px auto;
-    background-color: #d4d4d44d;
-    color: #ffffff;
+    background-color: white;
+    color: #5BBCEA;
     border-radius: 20px;
     padding: 10px 20px;
     font-size: 14px;
-    border: #5BBCEA solid 2px;
     font-weight: 500;
-    text-align: center;
-    text-decoration: none;
-}
+    border: 2px solid #5BBCEA;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
   
   .get-started-transparent-btn .arrow-icon {
-    background: white;
-    color: #5BBCEA;
+    background: #5BBCEA;
+    color: white;
     border-radius: 50%;
     width: 20px;
     height: 20px;
     transform: rotate(312deg);
     transition: transform 0.3s ease;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
     font-size: 14px;
   }
-
-  .button-group .get-started-transparent-btn {
-    margin-left: 15px;
-}
-
-  .get-started-transparent-btn:hover .arrow-icon {
-    transform: rotate(0deg); /* Optional: Reset on hover */
+  
+  .get-started-transparent-btn:hover {
+    background-color: #5bbcea33;
+    border-color: #48a7d6;
   }
   
+  .get-started-transparent-btn:hover .arrow-icon {
+    transform: rotate(0deg);
+  }
+
+  a.get-started-btn {
+    margin-left: 30px;
+}
+  
+  
   @media (max-width: 768px) {
+    .get-started-btn,
+    .get-started-transparent-btn {
+      width: 100%;
+    }
+    a.get-started-btn {
+      display: none;
+  }
     .collapse {
         background-color: white; 
         width: 100%;
@@ -124,6 +155,7 @@
       right: 0;
       background: white;
       padding: 20px;
+      text-align: center;
     }
   
     .logo {

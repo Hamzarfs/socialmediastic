@@ -1,7 +1,6 @@
 /* Main Section */
 .pricing-section-home {
     padding: 50px 0;
-    background-color: #f9f9f9;
   }
   
   /* Pricing Cards */
@@ -16,46 +15,53 @@
   .pricing-card .card {
     padding: 20px;
     border-radius: 10px;
-  }
+    border: 2px solid #5BBCEA;  /* Set border to transparent so gradient is visible */
+}
+
+.popular-badge {
+  background-color: #F1F1F1;
+  padding: 5px;
+  color: #000000;
+  font-size: 14px;
+  width: min-content;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+
   
   .pricing-card.popular .card {
     background: linear-gradient(to right, #5BBCEA, #94DAFC);
     color: white;
 }
 
+p.card-paragraph {
+  text-align: start;
+}
   /* Popular Tag */
-  .popular-tag {
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #28a745;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 10px;
-    text-transform: uppercase;
-  }
-  
-  /* Header */
-  .card-header h4 {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .card-header p {
+
+  .basic-text h4 {
+    background-color: #F1F1F1;
+    padding: 5px;
+    color: #000000;
     font-size: 14px;
-  }
+    width: min-content;
+    font-weight: 600;
+    border-radius: 4px;
+}
   
   /* Price Section */
-  .card-price h1 {
+  .card-price h2 {
     font-size: 48px;
     margin: 0;
     font-weight: bold;
+    text-align-last: start;
   }
   
   .card-price p {
     margin: 5px 0;
     font-size: 14px;
+    text-align-last: start;
 
   }
   
@@ -81,14 +87,19 @@
   }
   
   .icon-check {
-    color: #28a745;
+    color: #ffffff;
     margin-right: 10px;
-  }
-  
-  .icon-cross {
-    color: red;
-    margin-right: 10px;
-  }
+    background-color: #000000;
+    padding: 2px;
+    border-radius: 300px;
+}
+.icon-cross {
+  color: #ffffff;
+  background: red;
+  margin-right: 10px;
+  padding: 2px;
+  border-radius: 300px;
+}
   
   .coming-soon {
     font-size: 12px;

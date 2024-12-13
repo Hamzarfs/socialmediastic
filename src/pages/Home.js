@@ -6,6 +6,9 @@ import AwardsLogo from '../components/Home/awardslogo';
 import TabHomeSection from '../components/Home/HomeTabControl';
 import { AiOutlineArrowRight } from 'react-icons/ai'; // Import right arrow icon
 import PricingSection from '../components/Home/PricingSection';
+import GuaranteedSection from '../components/Home/Guarantee';
+import CtaHome from '../components/Home/cta-home';
+import IconTextHomeBox from '../components/Home/icontext-box';
 
 const Home = () => {
     return (
@@ -27,8 +30,13 @@ const Home = () => {
                  <AiOutlineArrowRight className="arrow-icon" />
                </button>
                </div></div>
-               <PricingSection/>
+               
              </div>
+             <PricingSection/>
+             <GuaranteedSection/>
+             <CtaHome/>
+             <IconTextHomeBox/>
+
             <h1>Home Page</h1>
             <p>Welcome to our website!</p>
            

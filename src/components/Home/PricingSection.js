@@ -66,8 +66,9 @@ const PricingSection = () => {
   return (
     <section className="pricing-section-home">
       <div className="container">
-        <div className="row justify-content-center">
+        <div className="row">
           {pricingPlans.map((plan, index) => (
+            
             <div
               key={index}
               className={`col-md-4 pricing-card ${
@@ -76,17 +77,22 @@ const PricingSection = () => {
             >
               {plan.isPopular}
               <div className={`card ${plan.isPopular ? "highlight" : ""}`}>
-                <div className="card-header">
-                  <h4>{plan.type}</h4>
-                  <p>
+
+                
+                
+              <div className="basic-text">
+  {plan.isPopular}
+  <h4>{plan.type}</h4>
+</div>
+
+                <p className="card-paragraph">
                     {plan.type === "PROFESSIONAL"
                       ? "For professional domain investors"
                       : "For all individuals and starters who want to start domaining."}
                   </p>
-                </div>
                 <div className="divider"></div>
                 <div className="card-price">
-                  <h1>${plan.price}</h1>
+                  <h2>${plan.price}</h2>
                   <p>Per member, per Month</p>
                 </div>
                 <div className="divider"></div>

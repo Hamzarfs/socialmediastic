@@ -1,0 +1,60 @@
+/* IconTextHomeBox.css */
+
+/* Section Styling */
+.icontext-home-box-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* Heading */
+  .icontext-home-box-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  /* Icon Text Box */
+  .icontext-home-box {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure uniform height */
+  }
+  
+  /* Icon */
+  .icontext-home-box-icon {
+    max-width: 50px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  /* Text */
+  .icontext-home-box-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 400px) {
+    .icontext-home-box {
+      padding: 15px;
+    }
+    
+    .icontext-home-box-icon {
+      max-width: 40px;
+      margin-bottom: 10px;
+    }
+  
+    .icontext-home-box-text {
+      font-size: 0.9rem;
+    }
+  }
+  

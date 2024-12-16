@@ -74,18 +74,20 @@ const TestimonialSection = () => {
                         ))}
                     </Swiper>
                 </div>
-                <div className="row justify-content-center">
+                {/* <div className="row justify-content-center">
+                    <div className="col-12 arrows">
                     <div className="swiper-button-prev">
                         <a href="#prev" className="nav-link">
-                           <i> <FaChevronLeft size={40} /></i> {/* Adjust size as needed */}
+                           <i> <FaChevronLeft size={40} /></i> 
                         </a>
                     </div>
                     <div className="swiper-button-next">
                         <a href="#next" className="nav-link">
-                            <FaChevronRight size={40} /> {/* Adjust size as needed */}
+                            <FaChevronRight size={40} /> 
                         </a>
                     </div>
-                </div>
+                    </div>
+                </div> */}
             </div>
         </section>
     );

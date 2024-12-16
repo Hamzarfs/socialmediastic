@@ -43,11 +43,14 @@
     color: #BFBFBF;
 }
 
+.col-12.arrows {
+    justify-items: center;
+}
 .swiper-button-prev,
 .swiper-button-next {
     position: relative;
     background-color: #5BBCEA;
-    color: #fff;
+    color: black;
     padding: 10px;
     border-radius: 50%;
     display: flex;

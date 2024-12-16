@@ -1,20 +1,32 @@
 // IconTextHomeBox.js
 import React from 'react';
 import '../../IconTextHomeBox.css'; // Ensure the CSS file contains styles for this component.
+import industriesimg from "../../images/industries.png";
+import industries1 from "../../images/industries1.png";
+import industries2 from "../../images/industries2.png";
+import industries3 from "../../images/industries3.png";
+import industries4 from "../../images/industries4.png";
+import industries5 from "../../images/industries5.png";
+import industries6 from "../../images/industries6.png";
+import industries7 from "../../images/industries7.png";
+import industries8 from "../../images/industries8.png";
+import industries9 from "../../images/industries9.png";
+import industries10 from "../../images/industries10.png";
+import industries11 from "../../images/industries11.png";
 
 const industries = [
-  { icon: 'path-to-icon/ecommerce.png', text: 'Ecommerce' },
-  { icon: 'path-to-icon/food.png', text: 'Food & Beverages' },
-  { icon: 'path-to-icon/pickup.png', text: 'Pickup & Delivery' },
-  { icon: 'path-to-icon/transportation.png', text: 'Transportation' },
-  { icon: 'path-to-icon/healthcare.png', text: 'Healthcare & Medical' },
-  { icon: 'path-to-icon/blockchain.png', text: 'Blockchain' },
-  { icon: 'path-to-icon/banking.png', text: 'Banking & Finance' },
-  { icon: 'path-to-icon/social.png', text: 'Social Networking' },
-  { icon: 'path-to-icon/real-estate.png', text: 'Real Estate' },
-  { icon: 'path-to-icon/education.png', text: 'Education' },
-  { icon: 'path-to-icon/iot.png', text: 'Internet of Things' },
-  { icon: 'path-to-icon/on-demand.png', text: 'On-Demand App' },
+  { icon: industriesimg, text: 'Ecommerce' },
+  { icon: industries1, text: 'Food & Beverages' },
+  { icon: industries2, text: 'Pickup & Delivery' },
+  { icon: industries3, text: 'Transportation' },
+  { icon: industries4, text: 'Healthcare & Medical' },
+  { icon: industries5, text: 'Blockchain' },
+  { icon: industries6, text: 'Banking & Finance' },
+  { icon: industries7, text: 'Social Networking' },
+  { icon: industries8, text: 'Real Estate' },
+  { icon: industries9, text: 'Education' },
+  { icon: industries10, text: 'Internet of Things' },
+  { icon: industries11, text: 'On-Demand App' },
 ];
 
 const IconTextHomeBox = () => {
@@ -24,7 +36,7 @@ const IconTextHomeBox = () => {
         {/* Heading Row */}
         <div className="row">
           <div className="col-12 text-center">
-            <h2 className="icontext-home-box-heading">Industries We Serve</h2>
+            <h2 className="tabsectionheading">Industries We Serve</h2>
           </div>
         </div>
 

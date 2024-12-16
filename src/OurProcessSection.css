@@ -1,0 +1,47 @@
+/* Unique section styling */
+.our-process-section {
+    background-color: #eef2f7; /* Light gray background */
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .our-process-section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .process-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px; /* Optional: Adds rounded corners to the image */
+  }
+  
+  /* Responsive image and section styling */
+  @media (max-width: 767px) {
+    .our-process-section h2 {
+      font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+    .process-image {
+      max-width: 90%; /* Ensure image is not too large on small devices */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .process-image {
+      max-width: 75%; /* For tablet screens */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .process-image {
+      max-width: 60%; /* For desktop screens */
+    }
+  }
+  

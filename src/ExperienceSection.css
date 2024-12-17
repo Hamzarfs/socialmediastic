@@ -1,0 +1,68 @@
+/* Unique Section Styling */
+.experience-section {
+    position: relative;
+    color: #333; /* Text color */
+  }
+  
+  /* Heading */
+  .experience-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .experience-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Experience Box */
+  .experience-box {
+    background-color: #94c98b;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .experience-item {
+    margin-bottom: 15px;
+  }
+  
+  .experience-value {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .experience-label {
+    font-size: 1rem;
+  }
+  
+  .experience-divider {
+    border: 0;
+    border-top: 2px solid #fff;
+    margin: 10px auto;
+    width: 80%;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .experience-heading {
+      font-size: 2rem;
+    }
+    .experience-value {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .experience-heading {
+      font-size: 1.8rem;
+    }
+    .experience-value {
+      font-size: 1.3rem;
+    }
+    .experience-text {
+      font-size: 1rem;
+    }
+  }
+  

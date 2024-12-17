@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../../Header.css'; // Import the CSS file
 import logo from "../../images/logo.png";
+import { Link } from "react-router-dom";
 import { AiOutlineArrowRight } from 'react-icons/ai'; // Import right arrow icon
 
 const Header = () => {
@@ -55,10 +56,10 @@ const Header = () => {
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li className="nav-item">
-                    <a className="nav-link" href="#">Home</a>
+                    <Link to="/" className="nav-link" >Home</Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">About Us</a>
+                  <Link to="/about-us" className="nav-link" >About Us</Link>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#">Services</a>

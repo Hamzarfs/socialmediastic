@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Ourprocess from '../../images/ourprocess.webp'; 
 import '../../OurProcessSection.css';  // Import the unique custom CSS
 
 const OurProcess = () => {
@@ -17,7 +18,7 @@ const OurProcess = () => {
         <div className="row">
           <div className="col text-center">
             <img
-              src="https://via.placeholder.com/800x400" // Replace with your image
+              src={Ourprocess} // Replace with your image
               alt="Our Work Process"
               className="img-fluid process-image"
             />

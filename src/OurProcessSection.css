@@ -1,9 +1,9 @@
 /* Unique section styling */
-.our-process-section {
-    background-color: #eef2f7; /* Light gray background */
+/* .our-process-section {
+    background-color: #eef2f7; 
     padding-top: 60px;
     padding-bottom: 60px;
-  }
+  } */
   
   .our-process-section h2 {
     font-size: 3rem;
@@ -28,20 +28,17 @@
     .our-process-section h2 {
       font-size: 2rem; /* Adjust heading size for smaller screens */
     }
-    .process-image {
-      max-width: 90%; /* Ensure image is not too large on small devices */
-    }
   }
   
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     .process-image {
-      max-width: 75%; /* For tablet screens */
+      max-width: 75%; 
     }
   }
   
   @media (min-width: 992px) {
     .process-image {
-      max-width: 60%; /* For desktop screens */
+      max-width: 60%; 
     }
   }
-  
+   */

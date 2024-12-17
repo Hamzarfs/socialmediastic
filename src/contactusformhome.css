@@ -2,6 +2,7 @@
     background-color: #f9f9f9;
   } */
   
+  
   .contactus-heading {
     font-size: 2.5rem;
     font-weight: bold;
@@ -53,6 +54,7 @@
   .contact-form .form-control {
     border-radius: 10px;
     background: #F1F1F1;
+    margin: 5px 0;
 }
   
   .contact-form .btn {

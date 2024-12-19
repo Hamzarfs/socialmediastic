@@ -6,9 +6,9 @@ const TabHomeSection = () => {
   const [activeTab, setActiveTab] = useState("tab1");
 
   const tabs = [
-    { id: "tab1", label: "Organic Social Media Management" },
-    { id: "tab2", label: "Content Strategy" },
-    { id: "tab3", label: "Content Creation & Design" },
+    { id: "tab1", label: "Management" },
+    { id: "tab2", label: "Marketing" },
+    { id: "tab3", label: "Monitoring" },
   ];
 
   const renderContent = () => {
@@ -18,11 +18,9 @@ const TabHomeSection = () => {
           <div className="tab-content-section">
             <div className="row">
               <div className="col-md-6 align-content-center">
-                <h2>Organic Social Media Management</h2>
+                <h2>Social Media Management</h2>
                 <p>
-                  Build an authentic online presence, foster meaningful
-                  interactions, and grow a loyal community of followers through
-                  organic social media management.
+                Social Mediastics are experts in the management of your brands. Our team will develop and execute an overarching plan to reach your target audience and build brand affinity. Engaging Content Implementing Online Community Management Running Targeted Ads, You'll get everything you want.
                 </p>
               </div>
               <div className="col-md-6">
@@ -40,10 +38,9 @@ const TabHomeSection = () => {
           <div className="tab-content-section">
             <div className="row">
               <div className="col-md-6 align-content-center">
-                <h2>Content Strategy</h2>
+                <h2>Social Media Marketing</h2>
                 <p>
-                  Develop a robust content strategy tailored to your brand's
-                  goals, audience, and market trends.
+                Our social media marketing packages are targeted to get your brand to stand out in the whole digital crowd. We design and implement campaigns that provide incremental brand awareness, leads, and sales results. Organic or paid social media, we'll make your message accessible to your target audience at the right time.
                 </p>
               </div>
               <div className="col-md-6">
@@ -61,10 +58,9 @@ const TabHomeSection = () => {
           <div className="tab-content-section">
             <div className="row">
               <div className="col-md-6 align-content-center">
-                <h2>Content Creation & Design</h2>
+                <h2>Social Media Monitoring</h2>
                 <p>
-                  Create visually stunning and engaging content to captivate
-                  your audience and reinforce your brand's message.
+                Our social media monitoring service keeps a close eye on online conversations about your brand. We track mentions, analyze sentiment, and identify trends to protect your reputation, spot opportunities, and engage with your audience.
                 </p>
               </div>
               <div className="col-md-6">
@@ -87,9 +83,9 @@ const TabHomeSection = () => {
       {/* First Row */}
       <div className="row">
         <div className="col-12 text-center">
-          <h2 className="tabsectionheading">Design Studio for Timeless</h2>
+          <h2 className="tabsectionheading">Comprehensive Social Media Solutions</h2>
           <p style={{ color: "#F26B6B", fontSize: "20px", fontWeight:"700" }}>
-            Drive Your Brand’s Social Engagement with Content That Resonates
+          Let us help you harness the power of social media to achieve your business goals.
           </p>
         </div>
       </div>

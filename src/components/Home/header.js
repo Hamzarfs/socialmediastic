@@ -32,14 +32,14 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <div className="row w-100 align-items-center">
-            <div className="col-4 col-md-4 d-flex align-items-center">
+            <div className="col-2 col-md-2 d-flex align-items-center">
               {/* Logo */}
               <div className="logo">
                 <img src={logo} alt="Social Mediastic" />
               </div>
             </div>
 
-            <div className="col-8 col-md-8 text-end">
+            <div className="col-10 col-md-10 text-end">
               {/* Navigation Links */}
               <button
                 className="navbar-toggler"
@@ -62,16 +62,17 @@ const Header = () => {
                   <Link to="/about-us" className="nav-link" >About Us</Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">Services</a>
+                  
+                  <Link to="/services" className="nav-link">Services</Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">Our Work</a>
+                  <Link to="/our-work" className="nav-link">Our Work</Link>
                   </li>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <a className="nav-link" href="#">Blogs</a>
-                  </li>
+                  </li> */}
                   <li className="nav-item">
-                    <a className="nav-link" href="#">Contact Us</a>
+                    <Link to="/contact-us" className="nav-link">Contact Us</Link>
                   </li>
                 </ul>
 

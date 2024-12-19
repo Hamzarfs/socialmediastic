@@ -1,0 +1,145 @@
+.services-page .services-we-deliver .description {
+    margin: 0 auto 50px;
+}
+
+.services-page .services-we-deliver .services-slide img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.services-page .services-we-deliver .slider-button {
+    position: absolute;
+    z-index: 10000;
+    top: 50%;
+    font-size: 50px;
+    color: #666666;
+}
+
+.services-page .services-we-deliver .slider-button-prev {
+    left: 15%;
+}
+
+.services-page .services-we-deliver .slider-button-next {
+    right: 15%;
+}
+
+.services-page .approach-section-2 p {
+    line-height: 34px;
+}
+
+.services-page .approach-section .custom-card {
+    background-color: #F4F4F4;
+    border: 1px solid #F4F4F4;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.services-page .approach-section .custom-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.services-page .approach-section .card-body {
+    padding: 2rem;
+}
+
+.services-page .approach-section .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.services-page .approach-section .card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 25px;
+}
+
+.services-page .approach-section .icon img {
+    width: 55px;
+    height: 55px;
+}
+
+
+/* For screen 1400px to 1920px */
+@media (max-width: 1919.98px) {
+    .services-page .services-we-deliver .slider-button-prev {
+        left: 2%;
+    }
+
+    .services-page .services-we-deliver .slider-button-next {
+        right: 2%;
+    }
+}
+
+/* For screen 1200px to 1399px */
+@media (max-width: 1399.98px) {
+    .services-page .services-we-deliver .services-slide img {
+        height: 400px;
+    }
+}
+
+/* For screen 992px to 1199px */
+@media (max-width: 1199.98px) {
+    .services-page .services-we-deliver .services-slide img {
+        height: 450px;
+    }
+}
+
+/* For screen 768px to 991px */
+@media (max-width: 991.98px) {
+    .services-page .services-we-deliver .services-slide img {
+        height: 400px;
+    }
+
+    .services-page .approach-section-2 .second-column {
+        margin-top: 30px;
+    }
+}
+
+/* For screen 576px to 767px */
+@media (max-width: 767.98px) {
+    .services-page .approach-section-2 p {
+        line-height: 30px;
+    }
+}
+
+/* For screen 480px to 575px */
+@media (max-width: 575.98px) {
+    .services-page .services-we-deliver .slider-button-prev {
+        display: none;
+    }
+
+    .services-page .services-we-deliver .slider-button-next {
+        display: none;
+    }
+}
+
+/* For screen 320px to 479px */
+@media (max-width: 479.98px) {
+    .services-page .services-we-deliver .services-slide img {
+        height: 350px;
+    }
+
+    .services-page .approach-section-2 .second-column h2 {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .services-page .approach-section .card-body {
+        padding: 1.5rem;
+    }
+
+    .services-page .approach-section .card-title {
+        font-size: 1.1rem;
+    }
+
+    .services-page .approach-section .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+

@@ -43,6 +43,10 @@
     margin: 10px auto;
     width: 80%;
   }
+
+  .heading-img {
+    width: 100%;
+}
   
   /* Responsive Styling */
   @media (max-width: 768px) {

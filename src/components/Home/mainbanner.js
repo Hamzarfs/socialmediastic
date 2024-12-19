@@ -23,9 +23,9 @@ const MainBanner = () => {
           {/* Left Column */}
           <div className="col-md-6">
             <div className="subheading">Top #1 Social Media Agency</div>
-            <h1 className="banner-heading">We Elevate Brand’s Social Media Services</h1>
+            <h1 className="banner-heading">Professional Social Media Services </h1>
             <p className="banner-text">
-              Find someone by username or email on Social Networks, Dating Sites, Forums, Social Media.
+            Ready to elevate your brand's online presence? Partner with Social Mediastics to achieve your marketing goals.
             </p>
             
             <div className="button-group">

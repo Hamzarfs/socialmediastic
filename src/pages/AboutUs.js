@@ -36,46 +36,50 @@ const About = () => {
 const steps = [
     {
         image: whyservice1,
-        alt: "Entertainment",
-        title: "Entertainment",
-        description: "Our animation studio specializes in creating outstanding visual effects, character animations, and motion graphics in film and television. We produce interactive gaming experiences with 3D and other animation options."
+        alt: "Captivating Content Creation",
+        title: "Captivating Content Creation",
+        description: "Our team specializes in creating crafty social posts that attract your people's attention and encourage them to interact."
     },
     {
         image: whyservice2,
-        alt: "Commercial",
-        title: "Commercial",
-        description: "Our studio is engaged in the production of captivating commercials, explainer videos, or corporate videos that help brands and businesses communicate well."
+        alt: "Industry Leader",
+        title: "Industry Leader",
+        description: "Our social experts boast years of experience, giving us insight into any industry. We can surely create tailor-made content for your target audience."
     },
     {
         image: whyservice3,
-        alt: "Nonprofit",
-        title: "Nonprofit",
-        description: "We create powerful animations to amplify the voices of nonprofits and social causes. Using very strong imagery and engaging storytelling, we create videos that succeed in grabbing audience attention."
+        alt: "Global Clientele",
+        title: "Global Clientele",
+        description: "That attests to our competence in bringing social media solutions to the world diverse clientele from across the globe became our proud partner."
     },
     {
         image: whyservice4,
-        alt: "Healthcare",
-        title: "Healthcare",
-        description: "The studio helps create clear and informative medical animations to educate healthcare professional and patients, in addition to developing interactive animations around pharmaceutical concepts."
+        alt: "Seamless Social Media Management",
+        title: "Seamless Social Media Management",
+        description: "Just let our hands get dirty while running through all the social maelstroms: we shall keep your interests well covered and let you concentrate on your core business."
     },
     {
         image: whyservice5,
-        alt: "Educational",
-        title: "Educational",
-        description: "In creating e-learning materials, we specialize in interactive animations and simulations that animate difficult subjects, thus appealing to their visual sense. "
+        alt: "Custom Service Plans",
+        title: "Custom Service Plans",
+        description: "A flexible, pay-as-you-go service model for social media services would enable you to pick relevant services according to your requirements and budget."
     },
     {
         image: whyservice6,
-        alt: "Sports",
-        title: "Sports",
-        description: "The studio creates vibrant graphics and animations for sports broadcasts as well as interesting videos promoting sports events and athletes."
+        alt: "Measurable Results",
+        title: "Measurable Results",
+        description: "Providing detailed analytics and reports related to the performance of your social media campaigns to get measurable, tangible results."
     }
 ];
 
     return (
         <div>
             <Header/>
-            <Breadcrumb/>
+            <Breadcrumb 
+              title="About Us" 
+              link="/about-us" 
+              linkText="About Us" 
+              />
             <ExperienceSec/>
             <div className="container py-3">
              {/* First Row */}

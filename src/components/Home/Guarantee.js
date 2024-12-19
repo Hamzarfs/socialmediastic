@@ -22,9 +22,9 @@ const GuaranteedSection = () => {
           <div className="col-lg-6 col-md-12">
             <h2 className="guaranteed-heading">Our Fair Refund Policy</h2>
             <ul className="guaranteed-list">
-              <li>We stand by our work and backup everything we do!</li>
-              <li>When you work with us you can rest easy we’ll be there the moment you need us!</li>
-              <li>If you’re unsatisfied, do let us know and we’ll refund your money!</li>
+              <li>We're so certain about the quality of our social media marketing that we offer a 100% money-back guarantee. </li>
+              <li>If you're not completely satisfied with the results, we'll refund your entire payment, no questions asked</li>
+              <li>Experience the power of our services without any risk. Our 100% money-back guarantee ensures your peace of mind.</li>
             </ul>
             <div className="button-group">
               <button className="get-started-btn">

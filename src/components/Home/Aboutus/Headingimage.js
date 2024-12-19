@@ -14,11 +14,11 @@ const Headingtext = () => {
         {/* First Row */}
         <div className="row align-items-center mb-4">
           {/* Heading */}
-          <div className="col-md-7 text-center text-md-start">
+          <div className="col-md-6 text-center text-md-start">
             <h2 className="experience-heading">Your Success, Our Priority</h2>
           </div>
           {/* Description */}
-          <div className="col-md-5 text-center text-md-start">
+          <div className="col-md-6 text-center text-md-start">
             <p className="experience-text">
             Your success is at the heart of everything we do. We're committed to partnering with you to achieve your goals, providing expert guidance, innovative strategies, and unwavering support. Together, we'll elevate your brand and drive your business forward.
             </p>
@@ -32,11 +32,9 @@ const Headingtext = () => {
             <img
               src={BackgroundImage}
               alt="Team working"
-              className="img-fluid rounded"
+              className="img-fluid rounded heading-img"
             />
           </div>
-
-
         </div>
       </div>
     </section>

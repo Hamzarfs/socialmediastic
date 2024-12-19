@@ -7,7 +7,7 @@ const WhyChooseService = ({
   steps // Array of steps with image, alt text, title, and description
 }) => {
   return (
-<section id="choose-service-section" className="container  py-4 mt-3">
+<section id="choose-service-section" className="container py-4 mt-3">
   {/* First Row: Heading and Description */}
   <div className="row">
     <div className="col-12 text-center">

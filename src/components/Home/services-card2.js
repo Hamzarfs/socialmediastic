@@ -7,8 +7,12 @@ import "../../CreativeServices.css"; // Custom styling
 import service1 from "../../images/service1.png";
 import service2 from "../../images/service2.png";
 
-const CreativeServices = () => {
-  const services = [
+const CreativeServices2 = () => {
+
+
+
+ 
+  const services2 = [
     {
       title: "Social Media Management Services",
       description:
@@ -21,6 +25,9 @@ const CreativeServices = () => {
         "Display different little messages to your target consumers. To ensure that your brand is familiar to your target consumers and to generate leads that will increase your sales, our targeted advertising campaigns will do the trick.",
       image: service2,
     },
+   
+  ];
+  const services3 = [
     {
       title: "Short Video Management Services",
       description:
@@ -47,18 +54,49 @@ const CreativeServices = () => {
       </div>
 
       {/* Row 2: Swiper Slider */}
-      <div className="row mt-4">
-        <div className="col-12">
+      <div className="row mt-4 justify-content-center">
+        <div className="col-10">
           <Swiper
             spaceBetween={20}
             slidesPerView={1}
             breakpoints={{
               576: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
-              992: { slidesPerView: 3 },
+              992: { slidesPerView: 2 },
             }}
           >
-            {services.map((service, index) => (
+            {services2.map((service, index) => (
+              <SwiperSlide key={index}>
+                <div className="service-card">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="img-fluid"
+                  />
+                  <div className="service-content">
+                    <h3 className="service-title">{service.title}</h3>
+                    <p className="service-description">{service.description}</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
+
+        {/* Row 3: Swiper Slider */}
+        <div className="row mt-4 justify-content-center">
+        <div className="col-10">
+          <Swiper
+            spaceBetween={20}
+            slidesPerView={1}
+            breakpoints={{
+              576: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              992: { slidesPerView: 2 },
+            }}
+          >
+            {services3.map((service, index) => (
               <SwiperSlide key={index}>
                 <div className="service-card">
                   <img
@@ -80,4 +118,4 @@ const CreativeServices = () => {
   );
 };
 
-export default CreativeServices;
+export default CreativeServices2;

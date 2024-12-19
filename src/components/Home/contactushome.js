@@ -70,7 +70,7 @@ const ContactUsFormHome = () => {
         <div className="row text-center mb-5">
           <div className="col-12">
             <h2 className="contactus-heading">Get In Touch</h2>
-            <p className="contactus-text">I'm always excited to take on new projects and collaborate with innovative minds. Feel free to reach out!</p>
+            <p className="contactus-text">Ready to elevate your brand's online presence and achieve your marketing goals? Let's connect and discuss how Social Mediastics can help you.</p>
           </div>
         </div>
 
@@ -83,28 +83,28 @@ const ContactUsFormHome = () => {
                 <FaPhone className="contact-icon" />
                 <div>
                   <span className="subtitle-contact">Phone:</span><br></br>
-                  <a href="tel:+12341117531" className="contact-link">+1-234-111-7531</a>
+                  <a href="tel:+7327979165" className="contact-link">73279 79165</a>
                 </div>
               </div>
               <div className="contact-item mb-4">
                 <FaEnvelope className="contact-icon" />
                 <div>
                   <span className="subtitle-contact">Email:</span><br></br>
-                  <a href="mailto:contact@william.design" className="contact-link">contact@william.design</a>
+                  <a href="mailto:info@socialmediastic.com" className="contact-link">info@socialmediastic.com</a>
                 </div>
               </div>
-              <div className="contact-item mb-4">
+              {/* <div className="contact-item mb-4">
                 <FaSkype className="contact-icon" />
                 <div>
                   <span className="subtitle-contact">Skype:</span><br></br>
                   <a href="tel:+12341117531" className="contact-link">+1-234-111-7531</a>
                 </div>
-              </div>
+              </div> */}
               <div className="contact-item mb-4">
                 <FaMapMarkerAlt className="contact-icon" />
                 <div>
                   <span className="subtitle-contact">Address:</span><br></br>
-                  <p>0811 Erdman Prairie, Joaville CA</p>
+                  <p>41 Winthrop Rd, Edison, NJ 08817</p>
                 </div>
               </div>
             </div>

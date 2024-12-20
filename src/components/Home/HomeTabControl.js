@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "../../TabHomeSection.css";
 import tabimg1 from "../../images/tabimg1.png"
+import tabimg2 from "../../images/SocialMediMarketing.png"
+import tabimg3 from "../../images/SocialMediaMonitoring.png"
+
+
 
 const TabHomeSection = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -45,7 +49,7 @@ const TabHomeSection = () => {
               </div>
               <div className="col-md-6">
                 <img
-                  src="/path-to-image2.png"
+                  src={tabimg2}
                   alt="Content Strategy"
                   className="img-fluid"
                 />
@@ -65,7 +69,7 @@ const TabHomeSection = () => {
               </div>
               <div className="col-md-6">
                 <img
-                  src="/path-to-image3.png"
+                  src={tabimg3}
                   alt="Content Creation & Design"
                   className="img-fluid"
                 />

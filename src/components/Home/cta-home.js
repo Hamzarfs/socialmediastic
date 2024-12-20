@@ -18,8 +18,8 @@ const CtaHome = () => {
           </div>
 
           {/* Column 2 - Button */}
-          <div className="col-lg-4 col-md-12 text-center">
-            <button className="cta-home-btn">
+          <div className="col-lg-4 col-md-12 " style={{justifyItems:'center'}}>
+            <button className="get-started-green-btn">
               Let’s Get Started
               <AiOutlineArrowRight className="arrow-icon" />
             </button>

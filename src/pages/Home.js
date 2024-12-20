@@ -15,10 +15,19 @@ import Testimonials from '../components/Home/Testimonial';
 import ContactUsFormHome from '../components/Home/contactushome';
 import Footer from '../components/Home/footer';
 import OurProcess from '../components/Home/our-process';
+import { Helmet } from 'react-helmet';
+
+
 
 const Home = () => {
     return (
+      
         <div>
+            <Helmet>
+        <title>Social Media Management Company & Agency | Social Mediastic</title>
+        <meta name="description" content="A social media management company. We offer social media marketing, social media management, and social media advertising. Call us today!" />
+        <link rel="canonical" href="https://www.socialmediastic.com/" />
+      </Helmet>
              <Header/>
              <MainBanner/>
              <AwardsLogo/>

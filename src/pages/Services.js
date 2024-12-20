@@ -4,6 +4,7 @@ import '../services.css'
 import sliderImg1 from '../images/service1.webp'
 import sliderImg2 from '../images/service2.webp'
 import sliderImg3 from '../images/service3.webp'
+import sliderImg4 from '../images/service4.webp'
 import Breadcrumb from '../components/Home/Aboutus/Breadcrumb';
 import Header from '../components/Home/header';
 import Footer from '../components/Home/footer';
@@ -14,24 +15,25 @@ import { Navigation, Autoplay } from "swiper/modules"
 import "swiper/css";
 import CreativeServices2 from '../components/Home/services-card2';
 import TestimonialSection from '../components/Home/Testimonial';
+import { Helmet } from 'react-helmet';
 
 const Services = () => {
     const slides = [
         {
-            title: '2D Animation',
+            title: 'Social Media Management Services',
             img: sliderImg1,
         },
         {
-            title: '3D Animation',
+            title: 'Social Media Advertising Services',
             img: sliderImg2,
         },
         {
-            title: 'Explainer Video',
+            title: 'Short Video Management Services',
             img: sliderImg3,
         },
         {
-            title: 'Motion Graphics',
-            img: sliderImg2,
+            title: 'Short Video Advertising Services',
+            img: sliderImg4,
         },
 
     ]
@@ -40,6 +42,11 @@ const Services = () => {
     return (
         <div>
             <Header/>
+            <Helmet>
+        <title>Our Services | Expert Digital Marketing Solutions</title>
+        <meta name="description" content="Social Mediastic uses digital marketing services to help companies grow their business with services like social media marketing & advertising." />
+        <link rel="canonical" href="https://www.socialmediastic.com/services" />
+      </Helmet>
             <Breadcrumb 
               title="Services" 
               link="/contact-us" 
@@ -48,8 +55,8 @@ const Services = () => {
                 <section className="services-we-deliver py-4 position-relative">
                 <div className="container">
                     <div className="text-center">
-                        <h2 className="experience-heading">Our Expertise</h2>
-                        <p className="secondformsec-description text-center">We offer a wide range of animation services to meet your unique needs.</p>
+                        <h2 className="experience-heading">Boost Your Brand Visibility and Engagement</h2>
+                        <p className="secondformsec-description text-center">Our social media services put your brand in front of thousands of targeted people who are likely to convert into clients or customers.</p>
                     </div>
 
                     <div className="mx-sm-5">
@@ -75,7 +82,7 @@ const Services = () => {
                                 <SwiperSlide key={i}>
                                     <div className="services-slide">
                                         <img src={slide.img} alt={slide.title} className="img-fluid" />
-                                        <h3 className="secondformsec-description text-center mt-3 text-center">{slide.title}</h3>
+                                        <h3 className="secondformsec-description mt-3 ">{slide.title}</h3>
                                     </div>
                                 </SwiperSlide>
                             ))}
@@ -96,13 +103,12 @@ const Services = () => {
         <div className="row align-items-center mb-4">
           {/* Heading */}
           <div className="col-md-6 text-center text-md-start">
-            <h2 className="experience-heading">A Digital Social Media
-            Company Reshaping the Future</h2>
+            <h2 className="experience-heading">How Social Media Services Can Transform Your Business</h2>
           </div>
           {/* Description */}
           <div className="col-md-6 text-center text-md-start">
             <p className="experience-text">
-            To deliver our expertise flexibly and with maximum impact, we have developed three different ways of working. Each is adaptable to your core needs, processes and culture of your business.
+            Social networking is obligatory these days for any business, regardless of size. If utilized properly, a business can take its brand visibility up several notches, communicate with its ideal targets, and drive sales. Companies would benefit from using the mighty platforms of strategized content development, community building, and paid advertising, to interact with the customers at another level to generate leads that will act as the bridge to later attain sustainable growth.
             </p>
           </div>
         </div>

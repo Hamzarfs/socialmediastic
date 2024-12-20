@@ -130,6 +130,46 @@
     transform: rotate(0deg);
   }
 
+
+  .get-started-green-btn {
+    background-color: #FFFFFF;
+    color: #94C98B;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .get-started-green-btn .arrow-icon {
+    background: #94C98B;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transform: rotate(312deg);
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  
+  .get-started-green-btn:hover {
+    background-color: #ffffff;
+    border-color: #94C98B;
+  }
+  
+  .get-started-green-btn:hover .arrow-icon {
+    transform: rotate(0deg);
+  }
+
   a.get-started-btn {
     margin-left: 30px;
 }

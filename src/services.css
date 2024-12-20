@@ -61,6 +61,9 @@
     height: 55px;
 }
 
+h3.secondformsec-description {
+    font-size: 18px;
+}
 
 /* For screen 1400px to 1920px */
 @media (max-width: 1919.98px) {

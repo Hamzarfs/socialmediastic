@@ -16,7 +16,7 @@ const LogoPortfolio = () => {
     <div className="logo-designs-portfolio py-4">
       <div className="container">
         {/* Heading for the Portfolio */}
-        <h2 className="portfolio-heading">Our Logo Design Portfolio</h2>
+        <h2 className="portfolio-heading">Our Creative Work</h2>
         
         <div className="row filter-button-group"></div>
         

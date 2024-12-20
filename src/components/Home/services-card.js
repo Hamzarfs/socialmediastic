@@ -6,6 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../CreativeServices.css"; // Custom styling
 import service1 from "../../images/service1.png";
 import service2 from "../../images/service2.png";
+import service3 from "../../images/services3.webp";
+import service4 from "../../images/services4.webp";
 
 const CreativeServices = () => {
   const services = [
@@ -25,13 +27,13 @@ const CreativeServices = () => {
       title: "Short Video Management Services",
       description:
         "Engage your viewers with great short videos. Our team will then design and implement all your short video content for you including development and distribution.",
-      image: service1,
+      image: service3,
     },
     {
         title: "Short Video Advertising Services",
         description:
           "Expand with the help of short video adverts. Our targeted video ads will go further and ensure that you capture the desired market and convert them.",
-        image: service2,
+        image: service4,
       },
   ];
 

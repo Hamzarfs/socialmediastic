@@ -6,6 +6,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../CreativeServices.css"; // Custom styling
 import service1 from "../../images/service1.png";
 import service2 from "../../images/service2.png";
+import service3 from "../../images/services3.webp";
+import service4 from "../../images/services4.webp";
+
 
 const CreativeServices2 = () => {
 
@@ -16,13 +19,13 @@ const CreativeServices2 = () => {
     {
       title: "Social Media Management Services",
       description:
-        "Let our professional social media management team to take care of your social media accounts. Our professional staff will develop interesting content, develop an active readership, and get the desired outcomes for your company.",
+        "We develop and execute a robust social media strategy to increase brand visibility, engagement, and customer loyalty.",
       image: service1, // Replace with actual image path
     },
     {
       title: "Social Media Advertising Services",
       description:
-        "Display different little messages to your target consumers. To ensure that your brand is familiar to your target consumers and to generate leads that will increase your sales, our targeted advertising campaigns will do the trick.",
+        "We utilize data-driven insights to create and execute effective ad campaigns that reach the right audience at the right time.",
       image: service2,
     },
    
@@ -31,14 +34,14 @@ const CreativeServices2 = () => {
     {
       title: "Short Video Management Services",
       description:
-        "Engage your viewers with great short videos. Our team will then design and implement all your short video content for you including development and distribution.",
-      image: service1,
+        "We produce high-quality, shareable short videos to captivate audiences and drive brand awareness.",
+      image: service3,
     },
     {
         title: "Short Video Advertising Services",
         description:
-          "Expand with the help of short video adverts. Our targeted video ads will go further and ensure that you capture the desired market and convert them.",
-        image: service2,
+          "We create and optimize short video ads to deliver strong brand messaging and drive conversions.",
+        image: service4,
       },
   ];
 
@@ -96,17 +99,17 @@ const CreativeServices2 = () => {
               992: { slidesPerView: 2 },
             }}
           >
-            {services3.map((service, index) => (
+            {services3.map((service3, index) => (
               <SwiperSlide key={index}>
                 <div className="service-card">
                   <img
-                    src={service.image}
-                    alt={service.title}
+                    src={service3.image}
+                    alt={service3.title}
                     className="img-fluid"
                   />
                   <div className="service-content">
-                    <h3 className="service-title">{service.title}</h3>
-                    <p className="service-description">{service.description}</p>
+                    <h3 className="service-title">{service3.title}</h3>
+                    <p className="service-description">{service3.description}</p>
                   </div>
                 </div>
               </SwiperSlide>

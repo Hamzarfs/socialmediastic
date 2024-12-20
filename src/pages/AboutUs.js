@@ -19,6 +19,7 @@ import WhyChooseService from '../components/Home/Aboutus/whychoose';
 import TestimonialSection from '../components/Home/Testimonial';
 import Footer from '../components/Home/footer';
 import ContactUsFormHome from '../components/Home/contactushome';
+import { Helmet } from 'react-helmet';
 
 const About = () => {
 
@@ -74,7 +75,14 @@ const steps = [
 
     return (
         <div>
+            
             <Header/>
+            
+      <Helmet>
+        <title>About Us - Social Mediastic</title>
+        <meta name="description" content="Learn about our team of SMM experts dedicated to helping your brand grow. We provide innovative strategies to boost engagement." />
+        <link rel="canonical" href="https://www.socialmediastic.com/about-us" />
+      </Helmet>
             <Breadcrumb 
               title="About Us" 
               link="/about-us" 

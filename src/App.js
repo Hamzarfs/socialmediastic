@@ -10,6 +10,8 @@ import Thankyou from './pages/Thankyoupage';
 import TermsandConditions from './pages/Termsconditions';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import ScrollToTop from './components/ScrollToTop';
+
 
 
 
@@ -17,6 +19,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 const App = () => {
     return (
         <Router>
+            <ScrollToTop/>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about-us" element={<About />} />

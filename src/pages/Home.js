@@ -16,65 +16,77 @@ import ContactUsFormHome from '../components/Home/contactushome';
 import Footer from '../components/Home/footer';
 import OurProcess from '../components/Home/our-process';
 import { Helmet } from 'react-helmet';
+import PopupForm from '../components/PopupForm';
 
 
 
 const Home = () => {
-    return (
-      
-        <div>
-            <Helmet>
+  return (
+
+    <div>
+      <Helmet>
         <title>Social Media Management Company & Agency | Social Mediastic</title>
         <meta name="description" content="A social media management company. We offer social media marketing, social media management, and social media advertising. Call us today!" />
-        <link rel="canonical" href="https://www.socialmediastic.com/" />
+        <link rel="canonical" href="https://socialmediastic.com/" />
       </Helmet>
-             <Header/>
-             <MainBanner/>
-             <AwardsLogo/>
-             <TabHomeSection/>
-             <div className="container">
-             <div className="row align-items-center">
-                      <div className="col-12 justify-content-center button-group">
-               <button className="get-started-btn">
-                 Free Consultation
-                 <AiOutlineArrowRight className="arrow-icon" />
-               </button>
-             
-               <button className="get-started-transparent-btn">
-                 View Pricing
-                 <AiOutlineArrowRight className="arrow-icon" />
-               </button>
-               </div></div>
-               
-             </div>
-             <PricingSection/>
-             <GuaranteedSection/>
-             <CtaHome/>
-             <IconTextHomeBox/>
-             <div className="container">
-             <div className="row align-items-center">
-                      <div className="col-12 justify-content-center button-group">
-               <button className="get-started-btn">
-               Schedule A Free Consultation
-                 <AiOutlineArrowRight className="arrow-icon" />
-               </button>
-               </div></div></div>
-               <LogoPortfolio/>
-               <div className="container">
-             <div className="row align-items-center">
-                      <div className="col-12 justify-content-center button-group">
-               <button className="get-started-btn">
-               Get Started
-                 <AiOutlineArrowRight className="arrow-icon" />
-               </button>
-               </div></div></div>
-              <CreativeServices/>
-              <OurProcess/>
-              <Testimonials/>
-              <ContactUsFormHome/>
-              <Footer/>
-        </div>
-    );
+      <Header />
+      <MainBanner />
+      <AwardsLogo />
+      <TabHomeSection />
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-12 justify-content-center button-group">
+               <a href="tel:+7327979165" style={{ textDecoration: 'none' }}>
+                  <button className="get-started-btn">
+                    Free Consultation
+                    <AiOutlineArrowRight className="arrow-icon" />
+                  </button>
+                </a>
+
+            <a href="/services" style={{ textDecoration: 'none' }}>
+  <button className="get-started-transparent-btn">
+    View Services
+    <AiOutlineArrowRight className="arrow-icon" />
+  </button>
+</a>
+
+          </div></div>
+
+      </div>
+      <div id="pricing-section">
+        <PricingSection />
+      </div>
+      <GuaranteedSection />
+      <CtaHome />
+      <IconTextHomeBox />
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-12 justify-content-center button-group">
+          <a href="tel:+7327979165" style={{ textDecoration: 'none' }}>
+                  <button className="get-started-btn">
+                    Schedule a Free Consultation
+                    <AiOutlineArrowRight className="arrow-icon" />
+                  </button>
+                </a>
+          </div></div></div>
+      <LogoPortfolio />
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-12 justify-content-center button-group">
+                <a className="get-started-btn" data-bs-toggle='modal' data-bs-target="#popupForm" style={{ cursor: 'pointer' }} href="#" >
+                                Get Started
+                                <AiOutlineArrowRight className="arrow-icon" />
+                              </a>
+          </div></div></div>
+      <CreativeServices />
+      <OurProcess />
+      <Testimonials />
+      <ContactUsFormHome />
+      <Footer />
+
+      <PopupForm />
+    </div>
+  );
 };
 
 export default Home;

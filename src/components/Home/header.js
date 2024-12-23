@@ -1,27 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import '../../Header.css'; // Import the CSS file
 import logo from "../../images/logo.png";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";  // Using Link for React Router
+
 import { AiOutlineArrowRight } from 'react-icons/ai'; // Import right arrow icon
 
 const Header = () => {
-  // State to track if the header should be sticky
   const [isSticky, setIsSticky] = useState(false);
 
-  // Hook to handle the scroll event and update the sticky state
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
-        setIsSticky(true);  // Add sticky class if scrolled
+        setIsSticky(true);
       } else {
-        setIsSticky(false); // Remove sticky class if at the top
+        setIsSticky(false);
       }
     };
 
-    // Add the scroll event listener
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -33,14 +30,14 @@ const Header = () => {
         <div className="container">
           <div className="row w-100 align-items-center">
             <div className="col-2 col-md-2 d-flex align-items-center">
-              {/* Logo */}
               <div className="logo">
-                <img src={logo} alt="Social Mediastic" />
+                <Link to="/">
+                  <img src={logo} alt="Social Mediastic" />
+                </Link>
               </div>
             </div>
 
             <div className="col-10 col-md-10 text-end">
-              {/* Navigation Links */}
               <button
                 className="navbar-toggler"
                 type="button"
@@ -56,30 +53,30 @@ const Header = () => {
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li className="nav-item">
-                    <Link to="/" className="nav-link" >Home</Link>
+                    <Link to="/" className="nav-link">Home</Link>
                   </li>
                   <li className="nav-item">
-                  <Link to="/about-us" className="nav-link" >About Us</Link>
+                    <Link to="/about-us" className="nav-link">About Us</Link>
                   </li>
                   <li className="nav-item">
-                  
-                  <Link to="/services" className="nav-link">Services</Link>
+                    <Link to="/services" className="nav-link">Services</Link>
                   </li>
                   <li className="nav-item">
-                  <Link to="/our-work" className="nav-link">Our Work</Link>
+                    <Link to="/our-work" className="nav-link">Our Work</Link>
                   </li>
-                  {/* <li className="nav-item">
-                    <a className="nav-link" href="#">Blogs</a>
-                  </li> */}
                   <li className="nav-item">
                     <Link to="/contact-us" className="nav-link">Contact Us</Link>
                   </li>
                 </ul>
 
                 {/* Get Started Button */}
-                <a href="#" className="get-started-btn">
+                <a
+                  className="get-started-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#popupForm"
+                  href="#"
+                >
                   Get Started
-                  {/* Apply custom CSS class to rotate the arrow */}
                   <AiOutlineArrowRight className="arrow-icon" />
                 </a>
               </div>

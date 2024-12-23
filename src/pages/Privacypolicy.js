@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
       <Helmet>
         <title>Privacy Policy - Social Mediastic</title>
         <meta name="description" content="Read our Privacy Policy to understand how we protect your data and ensure your privacy while using our social media services." />
-        <link rel="canonical" href="https://www.socialmediastic.com/privacy-policy" />
+        <link rel="canonical" href="https://socialmediastic.com/privacy-policy" />
       </Helmet>
             <div className="container mt-4">
       <h1 className="text-center mb-4">Privacy Policy</h1>

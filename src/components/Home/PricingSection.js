@@ -1,64 +1,89 @@
 import React from "react";
 import "../../PricingSection.css";
 import { FaCheck, FaTimes } from "react-icons/fa";
+import { AiOutlineArrowRight } from "react-icons/ai";  // Import the arrow icon
 
 const PricingSection = () => {
   const pricingPlans = [
     {
       type: "BASIC",
-      price: 19,
+      price: 100,
       features: [
-        "Access to All Features",
-        "1k lookups / per month",
-        "No API Credits",
-        "10 Monitoring Quota",
-        "60 minutes Monitoring interval",
-        "20% discount on backorders",
-        "Domain Name Appraisal",
-        "Ip Monitoring",
-        "Backlink Monitoring",
+        { name: "No. of Posts 10", isAvailable: true },
+        { name: "Platforms Included FB, LinkedIn", isAvailable: true },
+        { name: "Per Additional Platforms $20/month", isAvailable: true },
+        { name: "Captions Included", isAvailable: true },
+        { name: "Hashtags Included", isAvailable: true },
+        { name: "Posts' Custom Content", isAvailable: false },
+        { name: "Client's Content Usage (Text and Images)", isAvailable: false },
+        { name: "Company Brand Guideline", isAvailable: true },
+        { name: "No. Of Post Revisions 3",   isAvailable: true },
+        { name: "Custom Posts (Holidays, Seasonal, etc)", isAvailable: true },
+        { name: "Post Scheduling", isAvailable: true },
+        { name: "Monthly Reporting Standard", isAvailable: true },
+        { name: "Customer Support", isAvailable: true, comingSoon: true },
       ],
-      comingSoon: ["Domain Name Appraisal", "Ip Monitoring", "Backlink Monitoring"],
-      buttonText: "Start free 14-day Trial",
-      note: "No credit card required",
+      buttonText: "Get a Quote",
       isPopular: false,
     },
     {
       type: "PROFESSIONAL",
-      price: 49,
+      price: 200,
       features: [
-        "Access to All Features",
-        "1k lookups / per month",
-        "30k API Credits / month",
-        "10 Monitoring Quota",
-        "60 minutes Monitoring interval",
-        "20% discount on backorders",
-        "Domain Name Appraisal",
-        "Ip Monitoring",
-        "Backlink Monitoring",
+        { name: "No. of Posts 20", isAvailable: true },
+        { name: "Platforms Included FB, Instagram, LinkedIn", isAvailable: true },
+        { name: "Per Additional Platforms $20/month", isAvailable: true },
+        { name: "Captions Included", isAvailable: true },
+        { name: "Hashtags Included", isAvailable: true },
+        { name: "Company Brand Guideline", isAvailable: true },
+        { name: "No. Of Post Revisions 5", isAvailable: true },
+        { name: "Posts' Custom Content", isAvailable: false },
+        { name: "Client's Content Usage (Text and Images)", isAvailable: true },
+        { name: "Custom Posts (Holidays, Seasonal, etc)", isAvailable: true },
+        { name: "Post Scheduling", isAvailable: true },
+        { name: "Monthly Reporting Standard", isAvailable: true },
+        { name: "Customer Support", isAvailable: true },
+        { name: "Access to All Features", isAvailable: true },
+        { name: "1k lookups / per month", isAvailable: true },
+        { name: "30k API Credits / month", isAvailable: true },
+        { name: "10 Monitoring Quota", isAvailable: true },
+        { name: "60 minutes Monitoring interval", isAvailable: true },
+        { name: "20% discount on backorders", isAvailable: true },
+        { name: "Domain Name Appraisal", isAvailable: true },
+        { name: "Ip Monitoring", isAvailable: true },
+        { name: "Backlink Monitoring", isAvailable: true },
       ],
-      comingSoon: ["Domain Name Appraisal", "Ip Monitoring", "Backlink Monitoring"],
-      buttonText: "Start free 14-day Trial",
-      note: "No credit card required",
+      buttonText: "Get a Quote",
       isPopular: true,
     },
     {
       type: "ADVANCED",
-      price: 99,
+      price: 300,
       features: [
-        "Access to All Features",
-        "1k lookups / per month",
-        "30k API Credits / month",
-        "10 Monitoring Quota",
-        "60 minutes Monitoring interval",
-        "20% discount on backorders",
-        "Domain Name Appraisal",
-        "Ip Monitoring",
-        "Backlink Monitoring",
+        { name: "No. of Posts 30", isAvailable: true },
+        { name: "Platforms Included FB, Instagram, LinkedIn, X (Twitter)", isAvailable: true },
+        { name: "Per Additional Platforms $20/month", isAvailable: true },
+        { name: "Captions Included", isAvailable: true },
+        { name: "Hashtags Included", isAvailable: true },
+        { name: "Company Brand Guideline", isAvailable: true },
+        { name: "No. Of Post Revisions 10", isAvailable: true },
+        { name: "Posts' Custom Content", isAvailable: true },
+        { name: "Client's Content Usage (Text and Images)", isAvailable: true },
+        { name: "Custom Posts (Holidays, Seasonal, etc)", isAvailable: true },
+        { name: "Post Scheduling", isAvailable: true },
+        { name: "Monthly Reporting Advance", isAvailable: true },
+        { name: "Customer Support", isAvailable: true },
+        { name: "Access to All Features", isAvailable: true },
+        { name: "1k lookups / per month", isAvailable: true },
+        { name: "30k API Credits / month", isAvailable: true },
+        { name: "10 Monitoring Quota", isAvailable: true },
+        { name: "60 minutes Monitoring interval", isAvailable: true },
+        { name: "20% discount on backorders", isAvailable: true },
+        { name: "Domain Name Appraisal", isAvailable: true },
+        { name: "Ip Monitoring", isAvailable: true },
+        { name: "Backlink Monitoring", isAvailable: true },
       ],
-      comingSoon: ["Domain Name Appraisal", "Ip Monitoring", "Backlink Monitoring"],
-      buttonText: "Start free 14-day Trial",
-      note: "No credit card required",
+      buttonText: "Get a Quote",
       isPopular: false,
     },
   ];
@@ -68,62 +93,62 @@ const PricingSection = () => {
       <div className="container">
         <div className="row">
           {pricingPlans.map((plan, index) => (
-            
             <div
               key={index}
-              className={`col-md-4 pricing-card ${
-                plan.isPopular ? "popular" : ""
-              }`}
+              className={`col-md-4 pricing-card ${plan.isPopular ? "popular" : ""}`}
             >
-              {plan.isPopular}
               <div className={`card ${plan.isPopular ? "highlight" : ""}`}>
-
-                
-                
-              <div className="basic-text">
-  {plan.isPopular}
-  <h4>{plan.type}</h4>
-</div>
+                <div className="basic-text">
+                  <h4>{plan.type}</h4>
+                </div>
 
                 <p className="card-paragraph">
-                    {plan.type === "PROFESSIONAL"
-                      ? "For professional domain investors"
-                      : "For all individuals and starters who want to start domaining."}
-                  </p>
+                  {plan.type === "PROFESSIONAL"
+                    ? "For professional domain investors"
+                    : "For all individuals and starters who want to start domaining."}
+                </p>
                 <div className="divider"></div>
                 <div className="card-price">
                   <h2>${plan.price}</h2>
-                  <p>Per member, per Month</p>
+                  <p>Per Month</p>
                 </div>
                 <div className="divider"></div>
                 <ul className="features-list">
                   {plan.features.map((feature, idx) => (
                     <li key={idx}>
-                      {plan.comingSoon.includes(feature) ? (
+                      {feature.isAvailable ? (
                         <>
                           <FaCheck className="icon-check" />
-                          {feature}
-                          <span className="coming-soon">Coming Soon</span>
+                          {feature.name}
                         </>
-                      ) : feature === "No API Credits" ? (
+                      ) : feature.comingSoon ? (
                         <>
-                          <FaTimes className="icon-cross" />
-                          {feature}
+                          <FaCheck className="icon-check" />
+                          {feature.name}
+                          <span className="coming-soon">Coming Soon</span>
                         </>
                       ) : (
                         <>
-                          <FaCheck className="icon-check" />
-                          {feature}
+                          <FaTimes className="icon-cross" />
+                          {feature.name}
                         </>
                       )}
                     </li>
                   ))}
                 </ul>
-                <button
-                  className={`trial-btn ${plan.isPopular ? "popular-btn" : ""}`}
+
+                {/* Updated the button with the <a> tag and the required data-bs-toggle and data-bs-target */}
+                <a
+                  className={`trial-btn ${plan.isPopular ? "popular-btn" : ""}` }
+                  data-bs-toggle="modal"
+                  data-bs-target="#popupForm"
+                  href="#"
+                  style={{ textDecoration: 'none' }}
                 >
                   {plan.buttonText}
-                </button>
+                  {/* <AiOutlineArrowRight className="arrow-icon" /> */}
+                </a>
+
                 <p className="note">{plan.note}</p>
               </div>
             </div>

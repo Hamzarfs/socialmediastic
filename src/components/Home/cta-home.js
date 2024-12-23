@@ -19,10 +19,12 @@ const CtaHome = () => {
 
           {/* Column 2 - Button */}
           <div className="col-lg-4 col-md-12 " style={{justifyItems:'center'}}>
+          <a data-bs-toggle='modal' data-bs-target="#popupForm">
             <button className="get-started-green-btn">
               Let’s Get Started
               <AiOutlineArrowRight className="arrow-icon" />
             </button>
+            </a>
           </div>
           </div>
         </div>

@@ -1,0 +1,13 @@
+#popupForm button[type=submit] {
+    background-color: #215E89;
+    color: white;
+    transition: all .5s;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#popupForm button[type=submit]:hover {
+    border: 1px solid #215E89;
+    background-color: white;
+    color: #215E89;
+}

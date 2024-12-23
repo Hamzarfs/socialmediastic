@@ -45,7 +45,7 @@ const Services = () => {
             <Helmet>
         <title>Our Services | Expert Digital Marketing Solutions</title>
         <meta name="description" content="Social Mediastic uses digital marketing services to help companies grow their business with services like social media marketing & advertising." />
-        <link rel="canonical" href="https://www.socialmediastic.com/services" />
+        <link rel="canonical" href="https://socialmediastic.com/services" />
       </Helmet>
             <Breadcrumb 
               title="Services" 

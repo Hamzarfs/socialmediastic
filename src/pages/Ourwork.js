@@ -16,7 +16,7 @@ const Ourwork = () => {
       <Helmet>
         <title>Case Study Archive - Social Mediastic</title>
         <meta name="description" content="We've helped numerous clients boost their business and ROI. Check out the case studies and results from some of our successful partnerships!" />
-        <link rel="canonical" href="https://www.socialmediastic.com/our-work" />
+        <link rel="canonical" href="https://socialmediastic.com/our-work" />
       </Helmet>
             <Breadcrumb 
               title="Our Work" 

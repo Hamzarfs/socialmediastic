@@ -13,7 +13,7 @@ const TermsandConditions = () => {
       <Helmet>
         <title>Terms & Conditions - Social Mediastic</title>
         <meta name="description" content="Review our terms and conditions to understand the rules and guidelines for using our smm services. By using our site, you agree to these terms." />
-        <link rel="canonical" href="https://www.socialmediastic.com/terms-and-conditions" />
+        <link rel="canonical" href="https://socialmediastic.com/terms-and-conditions" />
       </Helmet>
             <div className="container py-5">
       <h1 className="text-center mb-4">Terms & Conditions</h1>

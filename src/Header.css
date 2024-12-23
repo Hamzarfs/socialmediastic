@@ -29,6 +29,7 @@
     background-color: rgba(0, 0, 0, 0.5);
   } */
   
+
   
   .navbar-nav {
     text-align: center;
@@ -146,6 +147,31 @@
     transition: background-color 0.3s ease, border-color 0.3s ease;
   }
   
+  /* Style for Web Scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+  height: 12px; /* Scrollbar height for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #F15A5A !important; /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounded corners */
+  /* border: 3px solid #fff;  */
+}
+
+::-webkit-scrollbar-track {
+  background: #5bbdea31; /* Light background for the track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Optional: Add hover effect on the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #F15A5A; /* A darker shade on hover */
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #F15A5A; /* Darker color when scrollbar is in use */
+}
   .get-started-green-btn .arrow-icon {
     background: #94C98B;
     color: white;

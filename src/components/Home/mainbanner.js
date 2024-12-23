@@ -3,6 +3,7 @@ import background from "../../images/bannerbg.webp"
 import bannerimage from "../../images/bannerimage.webp"
 import '../../MainBanner.css'; // Import the CSS file
 import { AiOutlineArrowRight } from 'react-icons/ai'; // Import right arrow icon
+import { Link } from 'react-scroll';
 
 
 const MainBanner = () => {
@@ -29,15 +30,24 @@ const MainBanner = () => {
             </p>
             
             <div className="button-group">
-  <button className="get-started-btn">
-    Free Consultation
-    <AiOutlineArrowRight className="arrow-icon" />
-  </button>
+            <a href="tel:+7327979165" style={{ textDecoration: 'none' }}>
+      <button className="get-started-btn">
+        Free Consultation
+        <AiOutlineArrowRight className="arrow-icon" />
+      </button>
+    </a>
 
-  <button className="get-started-transparent-btn">
-    View Pricing
-    <AiOutlineArrowRight className="arrow-icon" />
-  </button>
+    <Link
+        to="pricing-section"  // Target component id
+        smooth={true}           // Enable smooth scroll
+        duration={500}          // Duration of the scroll in ms
+        offset={-70}            // Optional offset to adjust position (like sticky navbar)
+      >
+        <button className="get-started-transparent-btn">
+          View Pricing
+          <AiOutlineArrowRight className="arrow-icon" />
+        </button>
+      </Link>
 </div>
             
           </div>

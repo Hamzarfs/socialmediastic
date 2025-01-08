@@ -17,6 +17,7 @@ import Footer from '../components/Home/footer';
 import OurProcess from '../components/Home/our-process';
 import { Helmet } from 'react-helmet';
 import PopupForm from '../components/PopupForm';
+import ScrollToTopButton from '../components/scrolltoback';
 
 
 
@@ -73,7 +74,7 @@ const Home = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-12 justify-content-center button-group">
-                <a className="get-started-btn" data-bs-toggle='modal' data-bs-target="#popupForm" style={{ cursor: 'pointer' }} href="#" >
+                <a className="get-started-btn" data-bs-toggle='modal' data-bs-target="#popupForm" style={{ cursor: 'pointer' }}  >
                                 Get Started
                                 <AiOutlineArrowRight className="arrow-icon" />
                               </a>
@@ -82,6 +83,7 @@ const Home = () => {
       <OurProcess />
       <Testimonials />
       <ContactUsFormHome />
+      {/* <ScrollToTopButton/> */}
       <Footer />
 
       <PopupForm />

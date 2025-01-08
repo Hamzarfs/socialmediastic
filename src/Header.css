@@ -202,6 +202,10 @@
   
   
   @media (max-width: 768px) {
+    .logo img {
+      max-height: 50px;
+      padding-left: 29px;
+  }
     .get-started-btn,
     .get-started-transparent-btn {
       width: 100%;

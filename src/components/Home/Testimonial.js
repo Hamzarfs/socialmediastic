@@ -22,7 +22,7 @@ const TestimonialSection = () => {
             location: 'Belgium'
         },
         {
-            text: 'Social Mediastics makes our social media marketing a whole different level. Their data-driven and innovative approach has helped our goals be reached. We recommend their business to any company that would like to make it big in social media. ',
+            text: 'Took makes our social media marketing a whole different level. Their data-driven and innovative approach has helped our goals be reached. We recommend their business to any company that would like to make it big in social media. ',
             name: 'Keri',
             location: 'UK'
         },

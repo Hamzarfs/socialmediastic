@@ -3,15 +3,17 @@ import footer from '../../images/footerlogo.png'; // Ensure the image path is co
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaYoutube, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import '../../footer.css';
 
-
-
 import { Link } from 'react-router-dom';
+import ScrollToTopButton from '../scrolltoback';
 
 const Footer = () => {
+   
     return (
+      
         <footer className="footer" style={{ backgroundColor: '#222222' }}>
             <div className="container">
                 <div className="row">
+                <ScrollToTopButton/>
 
                     {/* About Section with Logo */}
                     <div className="col-md-4">

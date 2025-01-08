@@ -89,7 +89,7 @@ const TabHomeSection = () => {
         <div className="col-12 text-center">
           <h2 className="tabsectionheading">Comprehensive Social Media Solutions</h2>
           <p style={{ color: "#F26B6B", fontSize: "20px", fontWeight:"700" }}>
-          Let us help you harness the power of social media to achieve your business goals.
+          Empower your business with strategic social media solutions tailored to achieve your goals.
           </p>
         </div>
       </div>

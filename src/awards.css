@@ -38,5 +38,11 @@
     height: auto;
 }
 
+/* Hide default Slick arrows */
+.slick-prev, .slick-next {
+    display: none !important;
+  }
+  
+
 
 

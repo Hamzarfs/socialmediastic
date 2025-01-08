@@ -43,15 +43,15 @@ const PricingSection = () => {
         { name: "Post Scheduling", isAvailable: true },
         { name: "Monthly Reporting Standard", isAvailable: true },
         { name: "Customer Support", isAvailable: true },
-        { name: "Access to All Features", isAvailable: true },
-        { name: "1k lookups / per month", isAvailable: true },
-        { name: "30k API Credits / month", isAvailable: true },
-        { name: "10 Monitoring Quota", isAvailable: true },
-        { name: "60 minutes Monitoring interval", isAvailable: true },
-        { name: "20% discount on backorders", isAvailable: true },
-        { name: "Domain Name Appraisal", isAvailable: true },
-        { name: "Ip Monitoring", isAvailable: true },
-        { name: "Backlink Monitoring", isAvailable: true },
+        // { name: "Access to All Features", isAvailable: true },
+        // { name: "1k lookups / per month", isAvailable: true },
+        // { name: "30k API Credits / month", isAvailable: true },
+        // { name: "10 Monitoring Quota", isAvailable: true },
+        // { name: "60 minutes Monitoring interval", isAvailable: true },
+        // { name: "20% discount on backorders", isAvailable: true },
+        // { name: "Domain Name Appraisal", isAvailable: true },
+        // { name: "Ip Monitoring", isAvailable: true },
+        // { name: "Backlink Monitoring", isAvailable: true },
       ],
       buttonText: "Get a Quote",
       isPopular: true,
@@ -73,15 +73,15 @@ const PricingSection = () => {
         { name: "Post Scheduling", isAvailable: true },
         { name: "Monthly Reporting Advance", isAvailable: true },
         { name: "Customer Support", isAvailable: true },
-        { name: "Access to All Features", isAvailable: true },
-        { name: "1k lookups / per month", isAvailable: true },
-        { name: "30k API Credits / month", isAvailable: true },
-        { name: "10 Monitoring Quota", isAvailable: true },
-        { name: "60 minutes Monitoring interval", isAvailable: true },
-        { name: "20% discount on backorders", isAvailable: true },
-        { name: "Domain Name Appraisal", isAvailable: true },
-        { name: "Ip Monitoring", isAvailable: true },
-        { name: "Backlink Monitoring", isAvailable: true },
+        // { name: "Access to All Features", isAvailable: true },
+        // { name: "1k lookups / per month", isAvailable: true },
+        // { name: "30k API Credits / month", isAvailable: true },
+        // { name: "10 Monitoring Quota", isAvailable: true },
+        // { name: "60 minutes Monitoring interval", isAvailable: true },
+        // { name: "20% discount on backorders", isAvailable: true },
+        // { name: "Domain Name Appraisal", isAvailable: true },
+        // { name: "Ip Monitoring", isAvailable: true },
+        // { name: "Backlink Monitoring", isAvailable: true },
       ],
       buttonText: "Get a Quote",
       isPopular: false,
@@ -92,6 +92,11 @@ const PricingSection = () => {
     <section className="pricing-section-home">
       <div className="container">
         <div className="row">
+        <div className="col-12 text-center">
+          <h2 className="tabsectionheading py-3">Our Social Media Pricing</h2>
+    
+        </div>
+          
           {pricingPlans.map((plan, index) => (
             <div
               key={index}
@@ -102,11 +107,11 @@ const PricingSection = () => {
                   <h4>{plan.type}</h4>
                 </div>
 
-                <p className="card-paragraph">
+                {/* <p className="card-paragraph">
                   {plan.type === "PROFESSIONAL"
                     ? "For professional domain investors"
                     : "For all individuals and starters who want to start domaining."}
-                </p>
+                </p> */}
                 <div className="divider"></div>
                 <div className="card-price">
                   <h2>${plan.price}</h2>

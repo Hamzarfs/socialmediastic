@@ -12,9 +12,9 @@ const CtaHome = () => {
           {/* Column 1 - Text Content */}
           <div className="col-lg-8 col-md-12">
             <h2 className="cta-home-heading">
-              Do You <span className="outline-text">Run an Agency?</span>
+            Are You <span className="outline-text">Run an Agency?</span>
             </h2>
-            <p className="cta-home-subtext">Request a White Label Package</p>
+            <p className="cta-home-subtext">Explore Our Exclusive White Label Packages Today!</p>
           </div>
 
           {/* Column 2 - Button */}

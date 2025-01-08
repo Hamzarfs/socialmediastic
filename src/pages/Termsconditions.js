@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Home/header';
 import Footer from '../components/Home/footer';
 import { Helmet } from 'react-helmet';
+import PopupForm from '../components/PopupForm';
 
 
 const TermsandConditions = () => {
@@ -42,6 +43,7 @@ const TermsandConditions = () => {
       </div>
     </div>
      <Footer/>
+     <PopupForm/>
 
 
         

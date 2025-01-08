@@ -51,7 +51,7 @@ const CreativeServices2 = () => {
       <div className="row">
         <div className="col-12 text-center">
           <h2 className="section-heading">
-            Have a wide range of <br /> creative services
+            Our Social Media Services
           </h2>
         </div>
       </div>

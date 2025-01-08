@@ -6,6 +6,7 @@ import Footer from '../components/Home/footer';
 import ContactUsFormHome from '../components/Home/contactushome';
 import LogoPortfolio from '../components/Home/Porfoliogallery';
 import { Helmet } from 'react-helmet';
+import PopupForm from '../components/PopupForm';
 
 const Ourwork = () => {
 
@@ -26,6 +27,7 @@ const Ourwork = () => {
               <LogoPortfolio/>
             <ContactUsFormHome/>
             <Footer/>
+            <PopupForm/>
         
         </div>
     );

@@ -16,6 +16,7 @@ import "swiper/css";
 import CreativeServices2 from '../components/Home/services-card2';
 import TestimonialSection from '../components/Home/Testimonial';
 import { Helmet } from 'react-helmet';
+import PopupForm from '../components/PopupForm';
 
 const Services = () => {
     const slides = [
@@ -136,6 +137,7 @@ const Services = () => {
               
             <ContactUsFormHome/>
             <Footer/>
+            <PopupForm/>
         
         </div>
     );

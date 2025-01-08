@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import '../Thankyou.css'
+import PopupForm from '../components/PopupForm';
 const Contactus = () => {
 
     return (
@@ -35,8 +36,9 @@ const Contactus = () => {
 
   
             </div>
-        
+            <PopupForm/>
         </div>
+      
     );
 };
 

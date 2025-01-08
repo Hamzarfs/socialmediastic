@@ -20,6 +20,7 @@ import TestimonialSection from '../components/Home/Testimonial';
 import Footer from '../components/Home/footer';
 import ContactUsFormHome from '../components/Home/contactushome';
 import { Helmet } from 'react-helmet';
+import PopupForm from '../components/PopupForm';
 
 const About = () => {
 
@@ -174,6 +175,7 @@ const steps = [
             />
             <TestimonialSection/>
             <ContactUsFormHome/>
+            <PopupForm/>
             <Footer/>
         
         </div>

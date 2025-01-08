@@ -28,8 +28,8 @@ const TestimonialSection = () => {
         },
         {
             text: 'We first hesitated quite a bit about social media outsourcing, but as soon as we contacted Social Mediastics, all of that doubt disappeared. There is a great professional, fast response, and always go the extra mile taking from their team. So, no worries about handing over work to them. ',
-            name: 'Davide',
-            location: 'Italy'
+            name: 'Thomas',
+            location: 'USA'
         },
         {
             text: 'Social Mediastics has totally changed the game for us as a company. Social media advertising expertise has had a positive impact on closing a good return for investment. We appreciate their partnership and look forward to continued benefits from this relationship."',

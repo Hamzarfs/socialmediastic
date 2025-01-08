@@ -12,10 +12,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import ScrollToTop from './components/ScrollToTop';
 
-
-
-
-
 const App = () => {
     return (
         <Router>

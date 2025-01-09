@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../TabHomeSection.css";
-import tabimg1 from "../../images/tabimg1.png"
+import tabimg1 from "../../images/tabimg1.webp"
 import tabimg2 from "../../images/SocialMediMarketing.png"
 import tabimg3 from "../../images/SocialMediaMonitoring.png"
 
@@ -10,9 +10,9 @@ const TabHomeSection = () => {
   const [activeTab, setActiveTab] = useState("tab1");
 
   const tabs = [
-    { id: "tab1", label: "Management" },
-    { id: "tab2", label: "Marketing" },
-    { id: "tab3", label: "Monitoring" },
+    { id: "tab1", label: "Social Media Management" },
+    { id: "tab2", label: "Social Media Marketing" },
+    { id: "tab3", label: "Social Media Monitoring" },
   ];
 
   const renderContent = () => {
@@ -96,20 +96,22 @@ const TabHomeSection = () => {
 
       {/* Second Row */}
       <div className="row">
-        <div className="col-12 text-center">
-          <div className="tabs">
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                className={`tab-button ${activeTab === tab.id ? "active" : ""}`}
-                onClick={() => setActiveTab(tab.id)}
-              >
-                {tab.label}
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
+  <div className="col-12 text-center">
+    <div className="tabs" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+      {tabs.map((tab) => (
+        <button
+          key={tab.id}
+          className={`tab-button ${activeTab === tab.id ? "active" : ""}`}
+          onClick={() => setActiveTab(tab.id)}
+          style={{ margin: '5px' }} // Optional: adds spacing between buttons
+        >
+          {tab.label}
+        </button>
+      ))}
+    </div>
+  </div>
+</div>
+
 
       {/* Third Row */}
       <div className="row mt-4">{renderContent()}</div>

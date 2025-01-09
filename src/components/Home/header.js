@@ -3,7 +3,7 @@ import { FaPhoneAlt } from 'react-icons/fa'; // Import the phone icon from react
 import { AiOutlineArrowRight } from 'react-icons/ai'; // Import right arrow icon
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import '../../Header.css'; // Import the CSS file
-import logo from "../../images/logo.png"; // Import logo
+import logo from "../../images/logo.svg"; // Import logo
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -30,7 +30,7 @@ const Header = () => {
         <div className="d-flex align-items-center">
           {/* Logo */}
           <Link to="/" className="navbar-brand logo">
-            <img src={logo} alt="Logo" />
+            <img className='logo' src={logo} alt="Logo" />
           </Link>
         </div>
         {/* Hamburger Button */}

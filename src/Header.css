@@ -13,13 +13,11 @@
     z-index: 100;
   }
   
-  .logo {
-    max-width: 100%;
-  }
-  
   .logo img {
-    max-height: 50px;
-  }
+    /* max-height: 50px; */
+    width: 159px;
+    padding-left: 11px;
+}
   
   .navbar-toggler {
     border: none;
@@ -239,6 +237,21 @@
     }
   }
 
+
+  @media (max-width: 992px) {
+    a.get-started-btn {
+      display: none;
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 20px;
+    text-align: center;
+  }
+}
   
   
   

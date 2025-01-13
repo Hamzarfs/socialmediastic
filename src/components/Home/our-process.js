@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Ourprocess from '../../images/ourprocess.webp'; 
+import Ourprocess from '../../images/Process.svg'; 
 import '../../OurProcessSection.css';  // Import the unique custom CSS
 
 const OurProcess = () => {

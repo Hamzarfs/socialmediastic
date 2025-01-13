@@ -7,7 +7,7 @@ import Portfolio4 from '../../images/gallery4.webp';
 import Portfolio5 from '../../images/gallery5.webp';
 import Portfolio6 from '../../images/gallery6.webp';
 import Portfolio7 from '../../images/gallery7.webp';
-import Portfolio8 from '../../images/gallery8.webp';
+import Portfolio8 from '../../images/gallery8.svg';
 import Portfolio9 from '../../images/gallery9.webp';
 
 

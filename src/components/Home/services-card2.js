@@ -4,10 +4,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../CreativeServices.css"; // Custom styling
-import service1 from "../../images/service1.png";
-import service2 from "../../images/service2.png";
-import service3 from "../../images/services3.webp";
-import service4 from "../../images/services4.webp";
+import service1 from "../../images/service1.svg";
+import service2 from "../../images/service2.svg";
+import service3 from "../../images/services3.svg";
+import service4 from "../../images/services4.svg";
 
 
 const CreativeServices2 = () => {

@@ -1,13 +1,13 @@
 // IconTextHomeBox.js
 import React from 'react';
 import '../../IconTextHomeBox.css'; // Ensure the CSS file contains styles for this component.
-import industriesimg from "../../images/industries.png";
-import industries1 from "../../images/industries1.png";
+import industriesimg from "../../images/industries.svg";
+import industries1 from "../../images/industries1.svg";
 import industries2 from "../../images/industries2.png";
-import industries3 from "../../images/industries3.png";
+import industries3 from "../../images/industries3.svg";
 import industries4 from "../../images/industries4.png";
-import industries5 from "../../images/industries5.png";
-import industries6 from "../../images/industries6.png";
+import industries5 from "../../images/industries5.svg";
+import industries6 from "../../images/industries6.svg";
 import industries7 from "../../images/industries7.png";
 import industries8 from "../../images/industries8.png";
 import industries9 from "../../images/industries9.png";

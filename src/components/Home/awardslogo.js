@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import Slider from 'react-slick';
 import '../../awards.css';
-import award1 from '../../images/award1.png';
-import award2 from '../../images/award2.png';
-import award3 from '../../images/award3.png';
-import award4 from '../../images/award4.png';
-import award5 from '../../images/award5.png';
-import award6 from '../../images/award6.png';
+import award1 from '../../images/award1.svg';
+import award2 from '../../images/award2.svg';
+import award3 from '../../images/award3.svg';
+import award4 from '../../images/award4.svg';
+import award5 from '../../images/award5.svg';
+import award6 from '../../images/award6.svg';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';

@@ -22,7 +22,7 @@ const Ourwork = () => {
             <Breadcrumb 
               title="Our Work" 
               link="/our-work" 
-              linkText="Crafted Creativity for Every Brand" 
+              linkText="Our work" 
               />
               <LogoPortfolio/>
             <ContactUsFormHome/>

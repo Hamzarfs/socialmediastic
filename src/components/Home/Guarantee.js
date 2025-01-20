@@ -1,7 +1,7 @@
 // GuaranteedSection.js
 import React from 'react';
 import { AiOutlineArrowRight } from 'react-icons/ai';
-import guarantee from "../../images/guarantee.png";
+import guarantee from "../../images/guarantee.svg";
 import '../../GuaranteedSection.css';
 
 const GuaranteedSection = () => {

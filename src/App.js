@@ -11,6 +11,8 @@ import TermsandConditions from './pages/Termsconditions';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import ScrollToTop from './components/ScrollToTop';
+import BlogPage from './pages/Blog';
+import BlogsPage from './pages/Blogs';
 
 const App = () => {
     return (
@@ -25,6 +27,8 @@ const App = () => {
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/terms-conditions" element={<TermsandConditions />} />
                 <Route path="/thank-you" element={<Thankyou />} />
+                <Route path="/:slug" element={<BlogPage />} />
+                    <Route path="/blogs" element={<BlogsPage />} />
             </Routes>
         </Router>
     );
